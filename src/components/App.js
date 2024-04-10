@@ -1,8 +1,5 @@
 import React from "react";
 import Tooltip from './Tooltip.js';
-
-
-//adding
 const App = () => {
   return (
     <div>
