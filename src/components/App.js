@@ -1,6 +1,6 @@
 import React from "react";
 import Tooltip from './Tooltip.js';
-
+//app.js
 const App = () => {
   return (
     <div>
@@ -14,5 +14,4 @@ const App = () => {
     </div>
   )
 }
-//app.js
 export default App
