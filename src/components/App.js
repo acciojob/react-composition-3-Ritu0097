@@ -1,6 +1,5 @@
 import React from "react";
 import Tooltip from './Tooltip.js';
-//app.js
 const App = () => {
   return (
     <div>
@@ -9,7 +8,7 @@ const App = () => {
         <button>Hover over me</button>
       </Tooltip>
       <Tooltip text="Another tooltip example.">
-        <div>Hover over this div</div>
+        <div>Hover me to see another tooltip</div>
       </Tooltip>
     </div>
   )
