@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './../styles/App.css';
 
 const Tooltip = ({ text, children }) => {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -13,15 +12,17 @@ const Tooltip = ({ text, children }) => {
   };
 
   return (
-    <div className="tooltip-container">
-      <div
-        className="tooltip"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {children}
-        {showTooltip && <span className="tooltiptext">{text}</span>}
-      </div>
+    <div
+      className="tooltip relative inline-block"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {children}
+      {showTooltip && (
+        <span className="tooltiptext absolute z-10 bg-gray-800 text-white px-4 py-2 rounded-md text-sm">
+          {text}
+        </span>
+      )}
     </div>
   );
 };
