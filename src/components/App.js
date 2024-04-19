@@ -1,19 +1,20 @@
-import React from 'react';
-import Tooltip from './Tooltip';
-
+import React from 'react'
+import Tooltip from './Tooltip'
+import './App.css'
 const App = () => {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <Tooltip text="This is a tooltip!">
-        <p>Hover over me</p>
-      </Tooltip>
-      <Tooltip text="Another tooltip">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mt-4">
-          Hover over me
-        </button>
-      </Tooltip>
-    </div>
-  );
-};
+	return (
+		<div>
+			<h2 class="tooltip">
+				<Tooltip text="This is a tooltip">Hover over me</Tooltip>
+			</h2>
+			<br />
+			<p class="tooltip">
+				<Tooltip text="This is another tooltip">
+					Hover over me to see another tooltip
+				</Tooltip>
+			</p>
+		</div>
+	)
+}
 
-export default App;
+export default App
