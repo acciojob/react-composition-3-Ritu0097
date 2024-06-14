@@ -1,4 +1,3 @@
-// Tooltip.js
 import React, { useState } from 'react';
 
 const Tooltip = ({ text, children }) => {
